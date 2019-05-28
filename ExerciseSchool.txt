@@ -1,0 +1,15 @@
+Projekt Szko³a
+
+Mamy szko³ê. 
+W szkole mamy klasy i uczniów.
+
+Ka¿da klasa ma liczbê nauczycieli. 
+Ka¿dy nauczyciel uczy ró¿nych przedmiotów. 
+Uczniowie maj¹ imiê i unikalny numer w klasie. 
+Klasy identyfikujemy po unikalnej nazwie. 
+Przedmioty maj¹ nazwê, liczbê lekcji, i liczbê zadañ.
+
+Zadaniem jest stworzyæ powy¿ej przedstawion¹ strukturê szko³y przy pomocy klas w C#.
+Zdefiniuj klasy wraz z odpowiednimi w³aœciwoœciami, metodami i konstruktorami.
+
+Napisz klasê testuj¹c¹ wykazuj¹c¹, ¿e zaimplementowane klasy dzia³aj¹ poprawnie.

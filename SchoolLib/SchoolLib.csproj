@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{33CFC421-58A1-437C-B55A-D69A03501DB1}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>SchoolProject</RootNamespace>
-    <AssemblyName>SchoolProject</AssemblyName>
+    <ProjectGuid>{D6C5E58C-3E61-4452-99C2-1D015DA1FAC8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SchoolLib</RootNamespace>
+    <AssemblyName>SchoolLib</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,17 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Class.cs" />
+    <Compile Include="Collection.Reporting\CollectionChangeEventHandler.cs" />
+    <Compile Include="Collection.Reporting\ReportingCollection.cs" />
+    <Compile Include="Collection.Reporting\ReportingCollectionAction.cs" />
+    <Compile Include="Collection.Reporting\ReportingCollectionEventArgs.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="School.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="Subject.cs" />
+    <Compile Include="Teacher.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SchoolLib\SchoolLib.csproj">
-      <Project>{d6c5e58c-3e61-4452-99c2-1d015da1fac8}</Project>
-      <Name>SchoolLib</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

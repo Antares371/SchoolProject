@@ -4,15 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SchoolProject
+namespace SchoolLib
 {
-    internal class Program
+    public class Student :Person
     {
-        private static void Main(string[] args)
+        public Student(string name, string surname) : base(name, surname)
         {
-         
 
-            Console.ReadLine();
         }
     }
 }
